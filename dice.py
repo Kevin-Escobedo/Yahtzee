@@ -8,4 +8,4 @@ class Die:
 
     def roll(self):
         '''Rolls the die'''
-        return random.randrange(1, sides + 1)
+        return random.randrange(1, self.sides + 1)
