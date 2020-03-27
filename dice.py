@@ -5,7 +5,10 @@ import random
 class Die:
     def __init__(self, sides:int = 6):
         self.sides = sides
+        self.rolls = []
 
     def roll(self):
         '''Rolls the die'''
-        return random.randrange(1, self.sides + 1)
+        roll = random.randrange(1, self.sides + 1)
+        self.rolls.append(roll)
+        return roll
